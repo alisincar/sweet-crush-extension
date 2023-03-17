@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet Crush</title>
+
+  <!-- Load style sheets -->
+  <link rel="stylesheet" href="bootstrap.css">
+
+  <link rel="stylesheet" href="mainLayout.css">
+
+  <!-- Use mobile-aware viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Load any supplemental Javascript libraries here -->
+  <script src="jquery.min.js"></script>
+  <script src="seedrandom.js"></script>
+  <script src="candy.js"></script>
+  <script src="board.js"></script>
+  <script src="rules.js"></script>
+  <script src="handler.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div id="firstColumn">
+        <h4 id="gameTitle">Sweet Crush</h1>
+        <label id="scoreLabel">0 points</label><br />
+        <div class="row">
+          <div class="col-6">
+            <input class="btn btn-sm btn-success" type="button" id="newGame" value="New Game"><br />
+          </div>
+          <div class="col-6">
+            <input class="btn btn-sm btn-warning" type="button" id="showMove" value="Show Move">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" id="mainColumn">
+        <div id="cover"></div>
+        <div id="gameBoard"></div>
+        <canvas id="canvas" width="320" height="320">
+          <p>Canvas not supported on your browser.</p>
+        </canvas>
+      </div>
+      <div class="col-md-3" id="lastColumn">Developed with love by <b>Mozared</b></div>
+    </div> <!-- class="row" -->
+  </div> <!-- class="container" -->
+</body>
+
+</html>

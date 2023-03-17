@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Sweet Crush",
+  "version": "1.0",
+  "description": "Mini Sweet Crush",
+  "author": {
+    "name": "Ali Sincar",
+    "email": "ali@mozared.com"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "96": "icon96.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon16.png"
+  }
+}
